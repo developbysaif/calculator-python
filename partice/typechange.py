@@ -107,7 +107,28 @@ def name (**name):
 
 name(first="John", last="Doe") # keyword argument with variable length argument
 
-# lists in python
+# lists methode  in python
+my_list = [1, 2, 3, 4, 5]
+my_list.sort(reverse=True)
+my_list.reverse() # reverse the list
+my_list.append(6)
+my_list.insert(3, 4333) # insert 0 at index 0
+my_list.index(2) # get the index of the element 2 in the list
+
+print(my_list)
+
+my_list = l
+m[0]=0
+print(my_list)
+
+k = [1, 2, 3, 4, 5]
+l = [6, 7, 8, 9, 10]
+m = [1, 2, 3, 4, 5]
+k= l + m # concatenate the list k and m
+l.extend(m) # extend the list l with the list m
+print(l)
+
+
 
 
 
