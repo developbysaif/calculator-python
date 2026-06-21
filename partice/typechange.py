@@ -128,7 +128,15 @@ k= l + m # concatenate the list k and m
 l.extend(m) # extend the list l with the list m
 print(l)
 
+tup =(1, 2, 3, 4, 5)
+# tup[0]=90
+print(tup[0] , type(tup)) # get the first element of the tuple
 
+# tuple methode in python
+tup =(1, 2, 3,3,3, 4, 5)
+tup.index()
+tup.count 
+tup.index(3 , 4 ,5) # get the index of the element 3 in the tuple starting from index 4 to index 5
 
 
 
