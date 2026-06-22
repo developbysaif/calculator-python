@@ -107,26 +107,6 @@ def name (**name):
 
 name(first="John", last="Doe") # keyword argument with variable length argument
 
-# lists methode  in python
-my_list = [1, 2, 3, 4, 5]
-my_list.sort(reverse=True)
-my_list.reverse() # reverse the list
-my_list.append(6)
-my_list.insert(3, 4333) # insert 0 at index 0
-my_list.index(2) # get the index of the element 2 in the list
-
-print(my_list)
-
-my_list = l
-m[0]=0
-print(my_list)
-
-k = [1, 2, 3, 4, 5]
-l = [6, 7, 8, 9, 10]
-m = [1, 2, 3, 4, 5]
-k= l + m # concatenate the list k and m
-l.extend(m) # extend the list l with the list m
-print(l)
 
 tup =(1, 2, 3, 4, 5)
 # tup[0]=90
@@ -134,9 +114,40 @@ print(tup[0] , type(tup)) # get the first element of the tuple
 
 # tuple methode in python
 tup =(1, 2, 3,3,3, 4, 5)
-tup.index()
-tup.count 
+tup.index(2) # get the index of the element 2 in the tuple
+tup.count(3) # get the count of the element 3 in the tuple
 tup.index(3 , 4 ,5) # get the index of the element 3 in the tuple starting from index 4 to index 5
 
+print = (f"the count of the element 3 in the tuple is: {tup}")
+
+ # doc string in python
+
+ # doc is the string that areuse in sitethe function it will be write inthe funtion eect after the function declaration and before the function body
+def average(a , b):
+    """This function takes two numbers as input and returns their average."""
+    return (a + b) / 2
+print(average.__doc__) # get the doc string of the function average
+ 
+# zen of python 
+import this # it will print the zen of python
+
+#pep 8 is the style guide for python code it will tell you how to write the code in python
+
+#recurions in python 
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
 
 
+print(5 * factorial(4)) # calculate the factorial of 5
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(10)) # calculate the 10th Fibonacci number
